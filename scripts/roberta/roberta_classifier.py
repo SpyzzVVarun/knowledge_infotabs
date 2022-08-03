@@ -170,7 +170,7 @@ def train(args):
 			json.dump(test_results, fp)
 		
 		full_name = args["save_dir"]+args["save_folder"]+"model_"+str(ep+1)+"_"+str(dev_acc)
-		!cp /content/knowledge_infotabs/temp/models/drr/full_name /content/drive/MyDrive/trial_weights
+		%cp /content/knowledge_infotabs/temp/models/drr/full_name /content/drive/MyDrive/trial_weights
 		
 def test_data(args):
 	# result_dir = "../results/"+args['in_dir'].split("/")[-2]+"-"+args['model_dir'].split("/")[-2]
